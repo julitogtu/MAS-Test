@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DummyTest.cs" />
+    <Compile Include="EmployeeDtoTest.cs" />
     <Compile Include="EmployeeServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
