@@ -1,0 +1,35 @@
+﻿<h2>Employee Search</h2>
+<hr />
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="employee-id" class="col-md-2 control-label">Employee Id:</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="employee-id" placeholder="Type the employee id">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="get-employees" type="submit" class="btn btn-primary">Get Employees</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Contract Type</th>
+                    <th>Hourly Salary</th>
+                    <th>Monthly Salary</th>
+                    <th>Anual Salary</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+</form>
+
+@section scripts {
+    <script src="~/Scripts/app/employeeModule.js"></script>
+    <script src="~/Scripts/app/index.js"></script>
+}
