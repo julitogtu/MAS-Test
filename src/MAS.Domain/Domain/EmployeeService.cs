@@ -19,7 +19,7 @@ namespace MAS.Domain.Domain
         {
             var employees = employeeRepository.GetAllEmployees();
 
-            if (!employees.Any()) return new List<EmployeeDto>();
+            if (employees is null || !employees.Any()) return new List<EmployeeDto>();
 
             var result = new List<EmployeeDto>();
             employees.ForEach(c =>
